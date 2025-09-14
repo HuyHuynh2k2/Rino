@@ -47,14 +47,14 @@ export default function Home() {
             <div className="text-sm text-gray-500 flex flex-col items-start gap-2 dropdown">
               <button
                 className="dropdown-item hover:text-amber-500 transition-all duration-300"
-                onClick={() => navigate("/learn/study")}
+                onClick={() => navigate("/learn")}
                 style={{ animationDelay: "0.1s" }}
               >
                 Study Guide
               </button>
               <button
                 className="dropdown-item hover:text-amber-500 transition-all duration-300"
-                onClick={() => navigate("/flashcard")}
+                onClick={() => navigate("/learn/flashcard")}
                 style={{ animationDelay: "0.2s" }}
               >
                 Flash Card
