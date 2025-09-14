@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage.tsx";
 import WorkPage from "./components/WorkPage.tsx";
 import LearnPage from "./components/LearnPage.tsx";
 import ContactPage from "./components/ContactPage.tsx";
+import NeetcodePage from "./components/NeetcodePage.tsx";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Route path="/work" element={<WorkPage />}></Route>
       <Route path="/learn" element={<LearnPage />}></Route>
       <Route path="/contact" element={<ContactPage />}></Route>
+
+      <Route path="learn/study" element={<NeetcodePage />}></Route>
     </Routes>
   );
 }

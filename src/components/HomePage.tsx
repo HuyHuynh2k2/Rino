@@ -47,7 +47,7 @@ export default function Home() {
             <div className="text-sm text-gray-500 flex flex-col items-start gap-2 dropdown">
               <button
                 className="dropdown-item hover:text-amber-500 transition-all duration-300"
-                onClick={() => navigate("/learn")}
+                onClick={() => navigate("/learn/study")}
                 style={{ animationDelay: "0.1s" }}
               >
                 Study Guide
