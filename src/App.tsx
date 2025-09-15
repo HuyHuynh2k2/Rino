@@ -7,6 +7,7 @@ import ContactPage from "./components/ContactPage.tsx";
 import NeetcodePage from "./components/NeetcodePage.tsx";
 import FlashCardPage from "./components/FlashCardPage.tsx";
 import DataStructurePage from "./components/DataStructurePage.tsx";
+import InterviewPage from "./components/InterviewPage.tsx";
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
       <Route
         path="/learn/studyguide/DataStructure"
         element={<DataStructurePage />}
+      ></Route>
+
+      <Route
+        path="/learn/studyguide/Interview"
+        element={<InterviewPage />}
       ></Route>
 
       <Route path="/learn/flashcard" element={<FlashCardPage />}></Route>
