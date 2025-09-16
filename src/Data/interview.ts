@@ -1936,6 +1936,109 @@ console.log(processNumber(3)); // ((3 + 1) * 2)^2 = 64`,
       console.log([...tree.depthFirst()]); // ['root', 'child1', 'grandchild1', 'grandchild2', 'child2']
       console.log([...tree.breadthFirst()]); // ['root', 'child1', 'child2', 'grandchild1', 'grandchild2']`,
   },
+  {
+    id: 27,
+    type: "Behavioral",
+    topic: ["teamwork", "conflict resolution"],
+    question:
+      "Tell me about a time you had a disagreement with a teammate. How did you handle it?",
+    answer: `
+      I calmly set up a private 1-on-1 to understand their perspective. 
+      I focused on shared goals, clarified misunderstandings, and proposed a compromise that allowed us to meet the deadline without sacrificing quality.`,
+    code: ``,
+  },
+  {
+    id: 28,
+    type: "Behavioral",
+    topic: ["leadership", "initiative"],
+    question:
+      "Describe a situation where you had to take the lead on a project unexpectedly.",
+    answer: `
+      During a group capstone project our lead fell sick two weeks before the demo. 
+      I created a priority list, delegated tasks based on strengths, and organized daily stand-ups to keep momentum. We delivered on time and received top marks.`,
+    code: ``,
+  },
+  {
+    id: 29,
+    type: "Behavioral",
+    topic: ["failure", "learning"],
+    question: "Tell me about a time you failed. What did you learn?",
+    answer: `
+      I once underestimated how long a database migration would take and missed a milestone. I learned to buffer estimates, communicate early about risks, and implement smaller incremental migrations in the future.`,
+    code: ``,
+  },
+  {
+    id: 30,
+    type: "Behavioral",
+    topic: ["adaptability", "fast-paced environment"],
+    question:
+      "Give an example of when you had to quickly adjust to a major change at work.",
+    answer: `
+      Our product requirements shifted after a sudden market change. 
+      I immediately re-prioritized the backlog, coordinated with the design team, and delivered an MVP with the new features within two sprints.`,
+    code: ``,
+  },
+  {
+    id: 31,
+    type: "Behavioral",
+    topic: ["communication", "stakeholder management"],
+    question:
+      "Describe a time you had to explain a complex technical concept to a non-technical stakeholder.",
+    answer: `I used simple analogies and visual diagrams to explain the trade-offs of different cloud hosting options to the marketing team. They left with a clear understanding and could make an informed budget decision.`,
+    code: ``,
+  },
+  {
+    id: 32,
+    type: "Behavioral",
+    topic: ["time management", "prioritization"],
+    question: "How do you handle multiple competing priorities?",
+    answer: `I use a priority matrix (urgent/important), communicate timelines early, and break work into small milestones. This keeps critical tasks on schedule without neglecting long-term goals.`,
+    code: ``,
+  },
+  {
+    id: 33,
+    type: "Behavioral",
+    topic: ["mentorship", "collaboration"],
+    question:
+      "Have you ever helped a teammate improve their skills? What was the outcome?",
+    answer: `
+      I paired with a junior developer struggling with Git workflows. 
+      We scheduled weekly pairing sessions and built a small internal guide. 
+      Their confidence grew and code reviews became much smoother.`,
+    code: ``,
+  },
+  {
+    id: 34,
+    type: "Behavioral",
+    topic: ["decision making", "ethics"],
+    question:
+      "Describe a tough decision you had to make when the 'right' choice wasn't clear.",
+    answer: `
+      I had to decide whether to ship a feature with a known low-risk bug or delay a high-profile launch. After consulting QA and stakeholders, we communicated the trade-offs and delayed the launch by two days to fix it, preserving customer trust.`,
+    code: ``,
+  },
+  {
+    id: 35,
+    type: "Behavioral",
+    topic: ["self-introduction", "ethics"],
+    question: "Tell me a bit about yourself and your background.",
+    answer: `
+      Hi, my name is Huy. I'm a recent graduate from UW with a degree in Computer Science, and I'm passionate about both front-end and back-end development. I love creating beautiful, performant products that deliver delightful user experiences.
+
+      During my time at school, Java was the first programming language I learned, which gave me a strong foundation for picking up the other languages I use today.
+
+      What drew me to computer science wasn't following any trend—it came from genuine frustration. You know those moments when you need to convert a PDF to a Word document, so you search for a tool online? Usually they're either paid services or 'free' ones that require your email and then spam you endlessly. That really bothered me, so I decided to learn programming so I could build the tools I actually wanted to use.
+
+      Regarding my experience, during college I was actively involved in the Husky Coding Club, where we organized hackathons, mentored fellow students, and built connections within the CS community.
+      
+      In 2023, I had the opportunity to intern at Skipli, a company that specialized in creating websites for restaurant owners and small business owners who wanted to showcase their services online. My role involved contributing to demo projects and building webpages, as well as managing API integrations. We would reach out to potential clients, present our demos, and if they were interested, we'd develop their official websites.
+      
+      Earlier this year, during my senior year, I interned at Marketeq Digital, where I focused primarily on backend development using TypeScript. I worked on their main product—an AI-powered platform that helps manage job postings for developer talent. The website serves as a marketplace where companies can discover and connect with developers through the platform.
+      
+      These experiences gave me hands-on exposure to both client-facing projects and internal product development, which helped me understand different aspects of the software development lifecycle.
+      `,
+    code: ``,
+  },
 ];
 
 export default data;
