@@ -1,4 +1,7 @@
 import linkedlist from "../utils/images/linkedlist.png";
+import tree from "../utils/images/tree.jpg";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function DataStructurePage() {
   return (
@@ -213,7 +216,7 @@ for (String str : list2) {
               block of memory.
             </p>
 
-            <img src={linkedlist} />
+            <img src={linkedlist} className="w-[50rem] h-[30rem]" />
 
             <h3 className="text-[1rem] font-bold">Declaration & Usage: </h3>
 
@@ -308,6 +311,138 @@ Explaination: So the goal is to reverse the linkedlist backward, so we use prev 
                 </pre>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Tree */}
+        <div className="mt-[4rem] mb-[4rem]">
+          <div>
+            <h2 className="text-2xl font-bold mb-[1rem]">4. Tree</h2>
+          </div>
+
+          <div className="flex flex-col gap-7">
+            <h3 className="text-[1rem] font-bold">I. Definition: </h3>
+            <p>
+              Tree data structure is a hierachical structure that is used to
+              represent and organize data in th eform of parent cild
+              relationship.
+            </p>
+
+            <img src={tree} className="w-[30rem] h-[20rem]" />
+
+            <p className="font-bold">II. Basic Term in Tree DS</p>
+            <p>
+              - Parent Node: The node which is an immediate. predescessorof a
+              node is called the parent node. <b>B</b> is the parent node of{" "}
+              <b>D, E.</b>
+            </p>
+
+            <p>
+              - Child Node: The node which is the immediate successor of a node
+              is called the child node of that node. Examples: <b>D, E</b> are
+              child node of <b>B</b>.
+            </p>
+
+            <p>
+              - Root Node: The topmost node of a tree or the node which does not
+              have any parent node is called the root node. <b>A</b> is the root
+              node of the tree. A non-empty tree must contain exactly one root
+              node and exactly one path from the root to all other nodes of the
+              tree.
+            </p>
+            <p>
+              - Leaf Node or External Node: The nodes which do not have any
+              child nodes are called leaf nodes. <b>I, J, K, F, G, H</b> are the
+              leaf nodes of the tree.
+            </p>
+
+            <p>
+              - Ancestor of a Node: Any predecessor nodes on the path of the
+              root to that node are called Ancestors of that node. <b>A,B</b>
+              are the ancestor nodes of the node <b>E</b>
+            </p>
+            <p>
+              - Sibling: Children of the same parent node are called siblings.{" "}
+              <b>D,E</b> are called siblings.
+            </p>
+
+            <p>
+              - Level of a node: The count of edges on the path from the root
+              node to that node. The root node has level 0.
+            </p>
+
+            <p>
+              - Internal node: A node with at least one child is called Internal
+              Node.
+            </p>
+
+            <p>
+              - Neighbour of a Node: Parent or child nodes of that node are
+              called neighbors of that node.
+            </p>
+
+            <p>- Subtree: Any node of the tree along with its descendant.</p>
+
+            <SyntaxHighlighter
+              language="javascript"
+              style={oneDark}
+              showLineNumbers
+              wrapLongLines
+              customStyle={{
+                borderRadius: "0.5rem",
+                padding: "1rem",
+                fontSize: "0.9rem",
+                marginBottom: "2rem",
+              }}
+            >
+              {`
+class TreeNode {
+  constructor(value) {
+    this.value = value;
+    this.children = [];
+  }
+
+  addChild(node) {
+    this.children.push(node);
+  }
+}
+
+const root = new TreeNode("root");
+const child1 = new TreeNode("child1");
+const child2 = new TreeNode("child2");
+
+root.addChild(child1);
+root.addChild(child2);
+
+console.log(root);
+              `}
+            </SyntaxHighlighter>
+
+            <p>
+              * Tree data structure can be classified into three types base on
+              the number of each node of the tree can have:
+            </p>
+
+            <p>
+              <b>Binary Tree</b> In a binary tree, each node can have maximum of
+              two children linked to it. Some common type of binary trees
+              include full binary tree, complete binary tree, balanced binary
+              tree, and degenerate or pathological binary trees
+            </p>
+
+            <p>
+              <b>Ternary Tree</b> A Ternary Tree is a tree data structure in
+              which each node has at most three child nodes, usually
+              distinguished as “left”, “mid” and “right”.
+            </p>
+
+            <p>
+              <b>N-ary Tree or Genereic tree</b> Generic trees are a collection
+              of nodes where each node is a data structure that consists of
+              records and a list of references to its children(duplicate
+              references are not allowed). Unlike the linked list, each node
+              stores the address of multiple nodes.
+            </p>
           </div>
         </div>
       </div>
